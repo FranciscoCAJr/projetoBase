@@ -70,7 +70,7 @@ namespace HelperStockBeta.Domain.Test
         public void CreateProduct_withParameters_ResultValid()
         {
             Action action = () => new Product(-1, "Category test");
-            action.Should().Throw<HelperStockBeta.Domain.Validation.DomainExceptionValidation>().WithMessage("Id cannot be negative");
+            action.Should().Throw<HelperStockBeta.Domain.Validation.DomainExceptionValidation>().WithMessage("invalid id, Id cannot be negative");
         }
         [Fact(DisplayName = "Category name null exception")]
         public void CreateProduct_withParameters_ResultValid()

@@ -88,7 +88,7 @@ namespace HelperStockBeta.Domain.Test
         public void CreateProduct_withParameters_ResultValid()
         {
             Action action = () => new Product(1, "nome do produto", null, 5, 1, "imagem produto");
-            action.Should().Throw<HelperStockBeta.Domain.Validation.DomainExceptionValidation>().WithMessage("product description invalid, production description cannot be blank");
+            action.Should().Throw<HelperStockBeta.Domain.Validation.DomainExceptionValidation>().WithMessage("invalid product description, production description cannot be blank");
         }
         [Fact(DisplayName = "short product description exception")]
         public void CreateProduct_withParameters_ResultValid()
