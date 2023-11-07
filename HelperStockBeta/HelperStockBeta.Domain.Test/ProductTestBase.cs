@@ -115,6 +115,5 @@ namespace HelperStockBeta.Domain.Test
             action.Should().Throw<HelperStockBeta.Domain.Validation.DomainExceptionValidation>().WithMessage("invalid image url, max 250 characters");
         }
     #endregion
-
     }
 }
