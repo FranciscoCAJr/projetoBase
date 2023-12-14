@@ -21,7 +21,7 @@ namespace HelperStockBeta.API.Controllers
             var categories = await _categoryService.GetCategories();
             if (categories == null)
             {
-                return NotFound("Categoria not found");
+                return NotFound("Category not found");
             }
 
             return Ok(categories);
